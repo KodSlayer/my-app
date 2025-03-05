@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74EBD5 0%, #9FACE6 100%);
+    font-family: 'Arial', sans-serif;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  input[type='text'],
+  input[type='email'],
+  input[type='number'],
+  input[type='password'] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
   }
-}
+  
+  input[type='text']:focus,
+  input[type='email']:focus,
+  input[type='number']:focus,
+  input[type='password']:focus {
+    border-color: #6c63ff;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type='radio'] {
+    margin-right: 10px;
+  }
+  
+  input[type='submit'] {
+    background: #6c63ff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.1s ease;
+  }
+  
+  input[type='submit']:hover {
+    background: #5753d6;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 600px) {
+    form {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  

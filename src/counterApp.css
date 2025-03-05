@@ -1,0 +1,81 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f4f8;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+  transition: color 0.3s ease;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:nth-child(1) {
+  background: #ff6b6b;
+  color: white;
+}
+
+button:nth-child(1):hover {
+  background: #ff4757;
+}
+
+button:nth-child(2) {
+  background: #ffa502;
+  color: white;
+}
+
+button:nth-child(2):hover {
+  background: #ff7f50;
+}
+
+button:nth-child(3) {
+  background: #1e90ff;
+  color: white;
+}
+
+button:nth-child(3):hover {
+  background: #3742fa;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 15px;
+    box-shadow: none;
+  }
+  
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
